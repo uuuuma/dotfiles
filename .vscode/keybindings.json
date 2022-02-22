@@ -1,0 +1,103 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+      "key": "ctrl+shift+f",
+      "command": "cursorRightSelect",
+      "when": "textInputFocus"
+  },
+  {
+      "key": "shift+right",
+      "command": "-cursorRightSelect",
+      "when": "textInputFocus"
+  },
+  {
+      "key": "ctrl+shift+b",
+      "command": "cursorLeftSelect",
+      "when": "textInputFocus"
+  },
+  {
+      "key": "shift+left",
+      "command": "-cursorLeftSelect",
+      "when": "textInputFocus"
+  },
+  {
+      "key": "ctrl+d",
+      "command": "cursorPageDown",
+      "when": "textInputFocus"
+  },
+  {
+      "key": "pagedown",
+      "command": "-cursorPageDown",
+      "when": "textInputFocus"
+  },
+  {
+      "key": "cmd+u",
+      "command": "-cursorUndo",
+      "when": "textInputFocus"
+  },
+  {
+      "key": "ctrl+u",
+      "command": "cursorPageUp",
+      "when": "textInputFocus"
+  },
+  {
+      "key": "pageup",
+      "command": "-cursorPageUp",
+      "when": "textInputFocus"
+  },
+  {
+      "key": "cmd+d",
+      "command": "-editor.action.addSelectionToNextFindMatch",
+      "when": "editorFocus"
+  },
+  {
+      "key": "ctrl+shift+n",
+      "command": "cursorDownSelect",
+      "when": "textInputFocus"
+  },
+  {
+      "key": "shift+down",
+      "command": "-cursorDownSelect",
+      "when": "textInputFocus"
+  },
+  {
+      "key": "ctrl+shift+p",
+      "command": "cursorUpSelect",
+      "when": "textInputFocus"
+  },
+  {
+      "key": "shift+up",
+      "command": "-cursorUpSelect",
+      "when": "textInputFocus"
+  },
+  {
+      "key": "ctrl+backspace",
+      "command": "-deleteLeft",
+      "when": "textInputFocus"
+  },
+  {
+      "key": "ctrl+backspace",
+      "command": "deleteRight",
+      "when": "textInputFocus"
+  },
+  {
+      "key": "ctrl+d",
+      "command": "-deleteRight",
+      "when": "textInputFocus"
+  },
+  {
+      "key": "ctrl+t",
+      "command": "-editor.action.transposeLetters",
+      "when": "textInputFocus && !editorReadonly"
+  },
+  {
+      "key": "cmd+t",
+      "command": "workbench.action.terminal.toggleTerminal",
+      "when": "terminal.active"
+  },
+  {
+      "key": "ctrl+`",
+      "command": "-workbench.action.terminal.toggleTerminal",
+      "when": "terminal.active"
+  }
+]

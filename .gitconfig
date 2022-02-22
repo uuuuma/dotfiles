@@ -1,0 +1,20 @@
+[include]
+    path = ~/.gitconfig.user
+[alias]
+    a = add
+    au = add -u
+    c = commit
+    ca = commit --amend
+    co = checkout
+    d = diff
+    dh = diff HEAD
+    l = log
+    s = status
+[commit]
+    template = ~/.gitmessage
+[init]
+    defaultBranch = main
+[push]
+    default = simple
+[pull]
+    rebase = false
