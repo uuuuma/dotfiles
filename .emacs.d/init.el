@@ -18,3 +18,5 @@
 ;;; backup files
 (setq make-backup-files nil)
 
+;;; avoid symlink prompt
+(setq vc-follow-symlinks t)
