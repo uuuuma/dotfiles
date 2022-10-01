@@ -12,6 +12,11 @@
     s = status
 [commit]
     template = ~/.gitmessage
+[core]
+    pager = delta
+[delta]
+    side-by-side = true
+    navigate = true
 [init]
     defaultBranch = main
 [push]
