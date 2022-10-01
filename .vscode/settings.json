@@ -16,5 +16,5 @@
   "editor.dragAndDrop": false,
   "editor.copyWithSyntaxHighlighting": false,
   "files.insertFinalNewline": true,
-  "terminal.integrated.fontSize": 18
+  "terminal.integrated.fontSize": 18,
 }
