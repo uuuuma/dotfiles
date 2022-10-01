@@ -10,7 +10,7 @@
 - shell
     - zsh >= 5.8
 
-## Instllation
+## Installation
 ### Make symbolic links to the target files
 Run the following command.
 
