@@ -2,7 +2,7 @@
 [ -e /opt/homebrew/bin/brew ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 [ -n "$(command -v zoxide)" ] && eval "$(zoxide init --cmd j zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[ -f "$(brew --prefix asdf)/asdf.sh" ] && source "$(brew --prefix asdf)/asdf.sh"
+[ -f "$(brew --prefix asdf)/libexec/asdf.sh" ] && source "$(brew --prefix asdf)/libexec/asdf.sh"
 
 # add PATHS
 export HISTSIZE=16384
