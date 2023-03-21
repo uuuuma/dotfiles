@@ -5,7 +5,6 @@
   "debug.openDebug": "openOnSessionStart",
   "debug.internalConsoleOptions": "openOnSessionStart",
   "debug.openExplorerOnEnd": true,
-  "debug.inlineValues": true,
   "editor.fontFamily": "JetBrains Mono, Cica, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 18,
   "editor.renderWhitespace": "all",
