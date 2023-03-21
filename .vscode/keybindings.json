@@ -31,8 +31,18 @@
     "when": "textInputFocus"
   },
   {
+    "key": "ctrl+shift+d",
+    "command": "cursorPageDownSelect",
+    "when": "textInputFocus"
+  },
+  {
     "key": "ctrl+u",
     "command": "cursorPageUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+u",
+    "command": "cursorPageUpSelect",
     "when": "textInputFocus"
   },
   {
@@ -46,7 +56,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl ctrl",
+    "key": "ctrl+j",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminal.active"
   },
@@ -81,6 +91,26 @@
     "when": "textInputFocus"
   },
   {
+    "key": "ctrl+;",
+    "command": "cursorWordPartRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+;",
+    "command": "cursorWordEndRightSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "cursorWordPartLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "cursorWordLeftSelect",
+    "when": "textInputFocus"
+  },
+  {
     "key": "cmd+r",
     "command": "editor.action.startFindReplaceAction",
     "when": "editorFocus || editorIsOpen"
@@ -88,5 +118,33 @@
   {
     "key": "shift+cmd+r",
     "command": "workbench.action.replaceInFiles"
+  },
+  {
+    "key": "cmd+l",
+    "command": "-expandLineSelection",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+l",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+.",
+    "command": "-editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+.",
+    "command": "editor.action.peekDefinition"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   }
 ]
