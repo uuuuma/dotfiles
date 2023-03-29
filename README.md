@@ -27,8 +27,6 @@ Run the following command.
 ./macos.zsh
 ```
 
-If you want to undo the settings, run the command commented out above each command.
-
 ### Install brew libraries
 Run the following command.
 
