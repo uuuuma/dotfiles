@@ -25,6 +25,8 @@ alias dsp='docker system prune -af'
 alias re='exec -l zsh'
 
 alias -g L='| less -R'
+# strip colors
+alias -g P='| sed "s/\x1b\[[0-9;]*m//g"'
 
 # add PATHS
 export HISTSIZE=16384
