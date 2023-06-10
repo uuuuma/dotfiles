@@ -8,6 +8,7 @@
     co = checkout
     d = diff
     dh = diff HEAD
+    dhh = diff HEAD^
     l = log
     s = status
 [commit]
