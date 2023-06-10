@@ -22,6 +22,8 @@ alias dvp='docker volume prune -f'
 alias dnp='docker network prune -f'
 alias dsp='docker system prune -af'
 
+alias re='exec -l zsh'
+
 alias -g L='| less -R'
 
 # add PATHS
