@@ -84,3 +84,5 @@ precmd() {
 }
 
 export PROMPT
+
+[ -f "$HOME/.zshrc.user" ] && source "$HOME/.zshrc.user"
