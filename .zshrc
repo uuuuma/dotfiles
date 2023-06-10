@@ -4,6 +4,26 @@
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f "$(brew --prefix asdf)/libexec/asdf.sh" ] && source "$(brew --prefix asdf)/libexec/asdf.sh"
 
+# aliases
+[ -n "$(command -v bat)" ] && alias cat='bat --plain --pager=never --color=always'
+[ -n "$(command -v exa)" ] && alias ls='exa --icons --color=always'
+alias ll='ls -l'
+alias lla='ls -la'
+alias ..='cd ..'
+alias ...='cd ../../'
+
+alias fd='fd --color=always'
+alias rg='rg -p'
+
+alias dip='docker image prune -af'
+alias dcp='docker container prune -f'
+alias dcc='docker ps -aq | xargs docker rm -f'
+alias dvp='docker volume prune -f'
+alias dnp='docker network prune -f'
+alias dsp='docker system prune -af'
+
+alias -g L='| less -R'
+
 # add PATHS
 export HISTSIZE=16384
 export SAVEHIST=16384
@@ -17,22 +37,6 @@ if [ -n "$(command -v fd)" -a -n "$(command -v fzf)" ]; then
     FZF_CTRL_T_COMMAND='fd --type d --follow .'
     export FZF_CTRL_T_COMMAND
 fi
-
-# aliases
-[ -n "$(command -v bat)" ] && alias cat='bat --plain'
-[ -n "$(command -v exa)" ] && alias ls='exa --icons'
-alias ll='ls -l'
-alias lla='ls -la'
-alias ..='cd ..'
-alias ...='cd ../../'
-
-alias dip='docker image prune -af'
-alias dcp='docker container prune -f'
-alias dvp='docker volume prune -f'
-alias dnp='docker network prune -f'
-alias dsp='docker system prune -af'
-
-[ -n "$(command -v fzf)" ] && alias -g F='| fzf'
 
 # autoload
 autoload -Uz compinit && compinit
