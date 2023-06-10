@@ -11,34 +11,39 @@
     - zsh >= 5.8
 
 ## Installation
-### Make symbolic links to the target files
-Run the following command.
-
-```zsh
-./symlink.zsh
-```
-
-**CAUTION**: If there is already the target files, this command overwrite them.
-
-### Configure the macOS settings
-Run the following command.
-
-```zsh
-./macos.zsh
-```
-
-### Install brew libraries
+### 1. Install libraries using brew
 Run the following command.
 
 ```zsh
 brew bundle
 ```
 
-### Configure the personal git settings
-The .gitconfig includes `~/.gitconfig.user`
+### 2. Make symbolic links to the target files
+Run the following command.
 
-### Use the terminal theme
-import the theme in the terminal directory from Terminal.app.
+```zsh
+./symlink.zsh
+```
+
+> **CAUTION**:  
+> If there is already the target files, this command overwrite them.
+
+### 3. Configure the macOS settings
+Run the following command.
+
+```zsh
+./macos.zsh
+```
+
+### 4. Use the terminal theme
+import `terminal/Google Dark.terminal` from Terminal.app.
+
+## Overwrite settings
+### .zshrc
+write settings you want to overwrite to `~/.zshrc.user`
+
+### .gitconfig
+write the personal git settings like `user.name` and `user.email` to `~/.gitconfig.user`
 
 ## Author
 uuuuma
