@@ -6,7 +6,7 @@
 
 # aliases
 [ -n "$(command -v bat)" ] && alias cat='bat --plain --pager=never --color=always'
-[ -n "$(command -v exa)" ] && alias ls='exa --icons --color=always'
+[ -n "$(command -v eza)" ] && alias ls='eza --icons --color=always'
 alias ll='ls -l'
 alias lla='ls -la'
 alias ..='cd ..'
