@@ -16,5 +16,6 @@
   "editor.copyWithSyntaxHighlighting": false,
   "editor.formatOnSave": true,
   "files.insertFinalNewline": true,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.fontSize": 18
 }
