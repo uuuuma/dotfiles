@@ -2,7 +2,7 @@
 [ -e /opt/homebrew/bin/brew ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 [ -n "$(command -v zoxide)" ] && eval "$(zoxide init --cmd j zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[ -f "$(brew --prefix asdf)/libexec/asdf.sh" ] && source "$(brew --prefix asdf)/libexec/asdf.sh"
+[ -n "$(command -v mise)" ] && eval "$(mise activate zsh)"
 
 # aliases
 [ -n "$(command -v bat)" ] && alias cat='bat --plain --pager=never --color=always'

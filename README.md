@@ -25,7 +25,7 @@ Run the following command.
 ./symlink.zsh
 ```
 
-> **CAUTION**:  
+> [!CAUTION]  
 > If there is already the target files, this command overwrite them.
 
 ### 3. Configure the macOS settings
