@@ -5,13 +5,18 @@ DOTFILES_DIR=$(cd $(dirname "${0}"); pwd)
 # link dotfiles
 DOTFILES=(
     ".zshrc"
-    ".asdfrc"
-    ".emacs.d"
+    ".config/mise/config.toml"
+    ".emacs.d/init.el"
     ".editorconfig"
     ".gitconfig"
     ".gitmessage"
 )
 for DOTFILE in $DOTFILES; do
+    TARGET_DIR=$(dirname "${HOME}/${DOTFILE}")
+    if [ ! -e "${TARGET_DIR}" ]; then
+        mkdir -p "${TARGET_DIR}"
+    fi
+
     ln -snf "${DOTFILES_DIR}/${DOTFILE}" "${HOME}/${DOTFILE}"
 done
 

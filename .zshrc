@@ -2,6 +2,7 @@
 [ -e /opt/homebrew/bin/brew ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 [ -n "$(command -v zoxide)" ] && eval "$(zoxide init --cmd j zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -n "$(command -v mise)" ] && eval "$(mise activate zsh)"
 [ -f "$(brew --prefix asdf)/libexec/asdf.sh" ] && source "$(brew --prefix asdf)/libexec/asdf.sh"
 
 # aliases
