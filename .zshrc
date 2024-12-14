@@ -28,6 +28,7 @@ alias re='exec -l zsh'
 alias -g L='| less -R'
 # strip colors
 alias -g P='| sed "s/\x1b\[[0-9;]*m//g"'
+alias -g C='P | pbcopy'
 
 # add PATHS
 export HISTSIZE=16384
