@@ -12,6 +12,7 @@ alias lla='ls -la'
 alias ..='cd ..'
 alias ...='cd ../../'
 
+alias nano='nano --modernbindings'
 alias fd='fd --color=always'
 alias rg='rg -p'
 

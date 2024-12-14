@@ -1,0 +1,29 @@
+set autoindent
+set boldtext
+set cutfromcursor
+set errorcolor bold,red
+set linenumbers
+set nohelp
+set minibar
+set selectedcolor ,lightblack
+set softwrap
+set tabsize 4
+set tabstospaces
+set trimblanks
+set zap
+
+bind ^A home main
+bind ^E end main
+bind ^G prevword main
+bind ^L nextword main
+bind ^U pageup main
+bind ^D pagedown main
+bind M-U firstline main
+bind M-D lastline main
+bind ^T mark main
+bind M-L gotoline main
+bind M-F whereis main
+bind M-R regexp search
+
+include "/opt/homebrew/opt/nano/share/nano/*.nanorc"
+include "~/.config/nano/*.nanorc"

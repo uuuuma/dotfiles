@@ -3,21 +3,32 @@
 DOTFILES_DIR=$(cd $(dirname "${0}"); pwd)
 
 # link dotfiles
-DOTFILES=(
+TARGETS=(
     ".zshrc"
-    ".config/mise/config.toml"
+    ".config"
     ".emacs.d/init.el"
     ".editorconfig"
     ".gitconfig"
     ".gitmessage"
 )
-for DOTFILE in $DOTFILES; do
-    TARGET_DIR=$(dirname "${HOME}/${DOTFILE}")
+for TARGET in $TARGETS; do
+    if [ -d "${TARGET}" ]; then
+        for DOTFILE in $(find "${TARGET}" -type f); do
+            TARGET_DIR=$(dirname "${HOME}/${DOTFILE}")
+            if [ ! -e "${TARGET_DIR}" ]; then
+                mkdir -p "${TARGET_DIR}"
+            fi
+            ln -snf "${DOTFILES_DIR}/${DOTFILE}" "${HOME}/${DOTFILE}"
+        done
+
+        continue
+    fi
+
+    TARGET_DIR=$(dirname "${HOME}/${TARGET}")
     if [ ! -e "${TARGET_DIR}" ]; then
         mkdir -p "${TARGET_DIR}"
     fi
-
-    ln -snf "${DOTFILES_DIR}/${DOTFILE}" "${HOME}/${DOTFILE}"
+    ln -snf "${DOTFILES_DIR}/${TARGET}" "${HOME}/${TARGET}"
 done
 
 # link vscode user settings

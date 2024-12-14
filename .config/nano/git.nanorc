@@ -1,0 +1,21 @@
+syntax "git" "COMMIT_EDITMSG"
+
+color magenta "^[[:space:]]*(wip|WIP):?"
+color yellow "(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\([^)]*\))?:"
+
+color lightblack "^[[:space:]]*#.*"
+
+color white "On branch .+"
+color white "Changes to be committed:"
+color green "new file:.+"
+color yellow "modified:.+"
+color blue "renamed:.+"
+
+color white "Changes not staged for commit:"
+color red "deleted:.+"
+
+color white "Untracked files:"
+color magenta "^[[:space:]]*#[[:space:]]*[^ ]+\..+$"
+color magenta "^[[:space:]]*#[[:space:]]*[^ ]+\/$"
+
+color lightblack "^[[:space:]]*#"

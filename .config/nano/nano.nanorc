@@ -1,0 +1,66 @@
+syntax "nano" "(nanorc|\.nanorc)$"
+
+# colors
+color black "black"
+color red "red"
+color green "green"
+color yellow "yellow"
+color blue "blue"
+color magenta "magenta"
+color cyan "cyan"
+color white "white"
+
+# light colors
+color lightblack "lightblack"
+color lightred "lightred"
+color lightgreen "lightgreen"
+color lightyellow "lightyellow"
+color lightblue "lightblue"
+color lightmagenta "lightmagenta"
+color lightcyan "lightcyan"
+color lightwhite "lightwhite"
+
+# bright colors
+color brightblack "brightblack"
+color brightred "brightred"
+color brightgreen "brightgreen"
+color brightyellow "brightyellow"
+color brightblue "brightblue"
+color brightmagenta "brightmagenta"
+color brightcyan "brightcyan"
+color brightwhite "brightwhite"
+
+# options
+# document: https://www.nano-editor.org/dist/v7/nanorc.5.html
+color yellow "(un)?set[[:space:]]+(afterends|allow_insecure_backup|atblanks|autoindent)"
+color yellow "(un)?set[[:space:]]+(backup|backupdir|boldtext|bookstyle|brackets|breaklonglines)"
+color yellow "(un)?set[[:space:]]+(casesensitive|constantshow|cutfromcursor)"
+color yellow "(un)?set[[:space:]]+(emptyline|errorcolor)"
+color yellow "(un)?set[[:space:]]+(fill|functioncolor)"
+color yellow "(un)?set[[:space:]]+(guidestripe)"
+color yellow "(un)?set[[:space:]]+(historylog)"
+color yellow "(un)?set[[:space:]]+(indicator)"
+color yellow "(un)?set[[:space:]]+(jumpyscrolling)"
+color yellow "(un)?set[[:space:]]+(keycolor)"
+color yellow "(un)?set[[:space:]]+(linenumbers|locking)"
+color yellow "(un)?set[[:space:]]+(magic|matchbrackets|minibar|minicolor|mouse|multibuffer)"
+color yellow "(un)?set[[:space:]]+(noconvert|nohelp|nonewlines|nowrap|numbercolor)"
+color yellow "(un)?set[[:space:]]+(operatingdir)"
+color yellow "(un)?set[[:space:]]+(positionlog|preserve|promptcolor|punct)"
+color yellow "(un)?set[[:space:]]+(quickblank|quotestr)"
+color yellow "(un)?set[[:space:]]+(rawsequences|rebinddelete|regexp)"
+color yellow "(un)?set[[:space:]]+(saveonexit|scrollercolor|selectedcolor|showcursor|smarthome|softwrap|speller|spotlightcolor|stateflags|statuscolor|stripecolor)"
+color yellow "(un)?set[[:space:]]+(tabsize|tabstospaces|titlecolor|trimblanks)"
+color yellow "(un)?set[[:space:]]+(unix)"
+color yellow "(un)?set[[:space:]]+(whitespace|wordbounds|wordchars)"
+color yellow "(un)?set[[:space:]]+(zap|zero)"
+
+color cyan "(un)?bind[[:space:]]+\^[A-Z]"
+color cyan "(un)?bind[[:space:]]+F[1-9][0-9]?"
+color cyan "(un)?bind[[:space:]]+M-[A-Z]"
+
+color magenta "^[[:space:]]*(set|unset|bind|unbind|include|i?color|syntax)"
+
+color green "\"[^"]*\""
+
+color lightblack "^[[:space:]]*#.*"
