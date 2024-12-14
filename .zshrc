@@ -1,7 +1,7 @@
 # init scripts
 [ -e /opt/homebrew/bin/brew ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 [ -n "$(command -v zoxide)" ] && eval "$(zoxide init --cmd j zsh)"
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -n "$(command -v fzf)" ] && eval "$(fzf --zsh)"
 [ -n "$(command -v mise)" ] && eval "$(mise activate zsh)"
 
 # aliases
