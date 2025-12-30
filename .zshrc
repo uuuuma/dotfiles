@@ -11,7 +11,11 @@ fi
 
 # aliases
 [ -n "$(command -v bat)" ] && alias cat='bat --plain --pager=never --color=always'
-[ -n "$(command -v eza)" ] && alias ls='eza --icons --color=always'
+if [ -n "$(command -v eza)" ]; then
+    alias ls='eza --icons --color=always'
+    alias tree='ls -a --tree --git-ignore'
+fi
+
 alias ll='ls -l'
 alias lla='ls -la'
 alias ..='cd ..'
@@ -20,6 +24,12 @@ alias ...='cd ../../'
 alias nano='nano --modernbindings'
 alias fd='fd --color=always'
 alias rg='rg -p'
+if [ -n "$(command -v gtar)" ]; then
+    function gzip() {
+        gtar --exclude-vcs --exclude-vcs-ignores --gzip --create -f "$(basename $1).gzip" "$1"
+    }
+    alias gunzip='gtar --gzip --extract -f'
+fi
 
 alias dip='docker image prune -af'
 alias dcp='docker container prune -f'
