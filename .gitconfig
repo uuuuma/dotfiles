@@ -2,6 +2,7 @@
     path = ~/.gitconfig.user
 [alias]
     a = add
+    ap = add -p
     au = add -u
     c = commit
     ca = commit --amend
@@ -11,6 +12,9 @@
     dh = diff HEAD
     dhh = diff HEAD^
     l = log
+    p = push
+    pf = push --force-with-lease
+    pr = pull --rebase
     s = status
 [commit]
     template = ~/.gitmessage
@@ -25,4 +29,4 @@
     default = simple
     autoSetupRemote = true
 [pull]
-    rebase = false
+    ff = only
