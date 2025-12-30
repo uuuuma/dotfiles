@@ -4,6 +4,11 @@
 [ -n "$(command -v fzf)" ] && eval "$(fzf --zsh)"
 [ -n "$(command -v mise)" ] && eval "$(mise activate zsh)"
 
+if [ -f "$(brew --prefix zsh-syntax-highlighting)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
+    source "$(brew --prefix zsh-syntax-highlighting)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+    ZSH_HIGHLIGHT_STYLES[path]=none
+fi
+
 # aliases
 [ -n "$(command -v bat)" ] && alias cat='bat --plain --pager=never --color=always'
 [ -n "$(command -v eza)" ] && alias ls='eza --icons --color=always'
