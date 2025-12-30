@@ -36,5 +36,6 @@
   "editor.formatOnSave": true,
   "files.insertFinalNewline": true,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "terminal.integrated.fontSize": 18
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.stickyScroll.enabled": false
 }
